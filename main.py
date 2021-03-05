@@ -33,6 +33,8 @@ def main():
     # Loading data from the given file
     raw_data = read_csv_data(file_path, ';')
 
+    sensor_data = raw_data[raw_data.columns[:-8]]
+
     print(raw_data.head())
 
 
